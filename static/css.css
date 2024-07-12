@@ -7,12 +7,7 @@
     overflow: hidden;
 }
 
-#logo{
-    height: 15%;
-    background-color: #1b1413;
 
-
-}
 
 #content{
 
@@ -30,6 +25,13 @@
     border-radius: 2vh;
 }
 
+#content *{
+    height: auto;
+    background-color: #1b1413;
+    horiz-align: center;
+}
+
+
 @media (orientation: portrait) {
 
     #content{
@@ -41,6 +43,7 @@
     }
 }
 
+
 .grandstander-b800{
     font-family: "Grandstander", cursive;
     font-optical-sizing: auto;
@@ -50,3 +53,12 @@
     text-align: center;
     background-color: #1b1413;
 }
+
+
+#logo{
+    height: 15%;
+    background-color: #1b1413;
+
+
+}
+
