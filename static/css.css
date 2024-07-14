@@ -62,3 +62,31 @@
 
 }
 
+#song_label{
+    color: white;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: larger;
+}
+
+#song {
+    color: white;
+    border: double forestgreen;
+    width: 60%;
+    font-size: larger;
+    position: relative;
+    left: 20%;
+
+
+}
+
+
+.grandstander-400b {
+   font-family: "Grandstander", cursive;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+
