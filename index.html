@@ -29,10 +29,11 @@
                 }
 
                 socket.emit("submit_song", song_uri);
-                song_elem.value = "";
+                //song_elem.value = "";
                 //alert("Success! Song added!")
             }else{
-                //alert("something is wrong, is this an spotify song share link?\n"+song_elem.value);
+                song_elem.style.border = " solid red 2px";
+                setTimeout(()=> song_elem.style.border = "double forestgreen 2px", 5000);
             }
 
 
@@ -49,7 +50,7 @@
     <div class="center_content_horiz">
     <label for="song" id="song_label" class="grandstander-400b">Paste the share link here</label>
 
-    <input type="text" name="song" id="song" placeholder="Spotify song link..." ><br><br>
+    <input type="text" name="song" id="song" placeholder="Spotify song link..." value="https://open.spotify.com/track/593aq2LX6veq1Ft0kHvrS9?si=9f9beedf65724aac"><br><br>
     </div>
     <div class="center_content_horiz">
         <button class="grandstander-400b green_button effect_green_glow" id="submit_song" onclick="submit_song() ">Submit</button>

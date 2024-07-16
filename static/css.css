@@ -73,7 +73,7 @@
 
 #song {
     color: white;
-    border: double forestgreen;
+    border: double forestgreen 2px;
     width: 60%;
     font-size: larger;
 
@@ -88,6 +88,8 @@
     text-align: center;
     border-radius: 2vh;
     border: solid black .3vh;
+    transform: translateY(0);
+
 
 
 }
@@ -99,23 +101,12 @@
     -moz-box-shadow: 0px 0px 1vh 1vh rgba(69, 255, 0, 0.31);
 }
 
-#submit_song:active:s{
+#submit_song:active{
 
-    animation: submit_green_click 5s;
-    animation-fill-mode: forwards;
+    background-color: forestgreen;
+    transform: translateY(.5vh);
 }
-@keyframes submit_green_click {
-    0% {
-        background-color: forestgreen;
-        transform: translate(0px, 1vh);
-    }
 
-    100%{
-        background-color: #1b1413;
-        transform: translate( 0, -1vh);
-    }
-
-}
 
 
 .grandstander-400b {
