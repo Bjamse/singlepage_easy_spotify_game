@@ -34,6 +34,7 @@ er nok lurt å prototype en ny side for å prøve og feile oss fram til et lobby
     - info om litt av hvert?
     - timers?
   - current liste brukere
+  - qr for å joine rom - v0.2
 
 
 ## Oauth 2.0
@@ -54,6 +55,7 @@ vi må
   - bruker room owners token for tilgang til liste
 - one click add sang fra most played 
   - få liste og velg 1/flere fra mest spillte v.2
+  - alternativt add 10 og sørg for at 1 spilles av fra hver spiller +- 3 ekstra sanger i session v0.4
 - add fra sjanger - v0.3 
   - se om vi kan gjøre noe på det.
   - sånn kanskje liste sjangere fra din egene spillelister.
@@ -61,4 +63,16 @@ vi må
   - felles sjanger vlag og vis kun sjangere fra felles sjangere
 
 
-# V2.0 - ikke spotify brukere får være med via youtube / apple music (kanskej aldri)
+## V2.0 - ikke spotify brukere får være med via youtube / apple music (kanskej aldri)
+
+Planen ville generelt sett vært å lage en virituell spilleliste som kombinere fra spotify, youtube og apple music (hvis de støtter det).
+Man hadde laga en kø med de forskjellige trakka og så ville man brukt embed for hver og en ogspillt de av.
+Dette blir et hærk å validate, hadde blitt bare masse youtube linker som man ikke helt vet om funeker elelr ikke.
+Brukeren måtte lasta det lokalt for å se om det var riktig først før den ble submitta.
+
+Ikke sikkert det er mulig slik api-ene er satt opp i dag.
+
+## v3.0
+singleplayer
+- Add songs thats simmilar but not in your lists
+  - guess if its from your lists and or witch ones, 
