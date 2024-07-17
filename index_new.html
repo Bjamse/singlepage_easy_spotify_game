@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tecnical improvement</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"> </script>
+    <script>
+    const socket = io();
+
+    socket.on("debug", (data)  => {
+        console.log(data.msg);
+        console.log(data);
+        document.getElementById("debug").innerHTML += "<span class='debug'>"+data.msg+"</span><br>";
+    });
+
+    </script>
+    <script src="static/send_to_server.js"></script>
+    <script src="static/get_from_server.js"></script>
+
+</head>
+<body>
+
+<h1>you are <span id="title_name">unknown</span></h1>
+
+
+
+
+<button type="button">create new room</button><br>
+<input type="text" id="input_join_room" placeholder="room_id"><button type="button">join room</button>
+
+<br>
+<input type="text" placeholder="brukernavn" id="input_username"> <button id="submit_username">set username</button>
+<br>
+<button onclick="socket.emit('test', 'this is the message i send')">test</button>
+<br>
+<button onclick="socket.emit('test2', 'this is the message i send')">test2</button>
+
+
+<div id="debug">
+    <h2>debug log:</h2>
+</div>
+</body>
+</html>
